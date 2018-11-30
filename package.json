@@ -1,0 +1,25 @@
+{
+  "name": "react-material-site-boilerplate",
+  "version": "0.1.0",
+  "homepage": "https://techcoop.github.io/react-material-site-boilerplate/",
+  "private": true,
+  "dependencies": {
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "react-material-site": "^0.2.0"
+  },
+  "scripts": {
+    "start": "react-material-site content --auto && react-material-site prebuild --watch && react-app-rewired start",
+    "build": "react-material-site content --auto && react-app-rewired build",
+    "content": "react-material-site content --manual",
+    "test": "react-app-rewired test --env=jsdom",
+    "eject": "react-app-rewired eject",
+    "stats": "react-material-site stats"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
