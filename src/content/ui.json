@@ -1,0 +1,27 @@
+{
+  "AUTH_LOGIN_FAILED": {
+    "en": "There was an error when trying to log you in. Please contact support.",
+    "fr": "Une erreur s'est produite lors de la tentative de connexion. Veuillez contacter le support.",
+    "sp": "Hubo un error al intentar iniciar sesión. Póngase en contacto con el soporte técnico."
+  },
+  "AUTH_NOT_ENABLED": {
+    "en": "Authentication is not enabled. Please contact support.",
+    "fr": "L'authentification n'est pas activée. S'il vous plaît contacter le support.",
+    "sp": "La autenticación no está habilitada. Por favor contáctese con soporte."
+  },
+  "AUTH_PROFILE_FAILED": {
+    "en": "Unable to fetch profile, please try to login again or contact support.",
+    "fr": "Impossible de récupérer le profil, essayez de vous reconnecter ou contactez le support.",
+    "sp": "No se puede recuperar el perfil. Intente iniciar sesión de nuevo o póngase en contacto con el servicio de asistencia."
+  },
+  "AUTH_PROFILE_EXISTING_AUTH": {
+    "en": "It looks like you are already logged in!",
+    "fr": "Il semble que vous soyez déjà connecté!",
+    "sp": "¡Parece que ya has iniciado sesión!"
+  },
+  "MESSAGE_NOT_FOUND": {
+    "en": "Sorry, could not find the right message to display.",
+    "fr": "Désolé, impossible de trouver le bon message à afficher.",
+    "sp": "Lo sentimos, no pudimos encontrar el mensaje correcto para mostrar."
+  }
+}

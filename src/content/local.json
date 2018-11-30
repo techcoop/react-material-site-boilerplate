@@ -1,0 +1,56 @@
+{
+  "cookie notice": {
+    "title": {"en": "Cookie Notice", "fr": "Avis de cookie"},
+    "message": {
+      "en": "We use cookies for analytics and to improve our site, and by continuing to use this site, you agree to our use of cookies. You can read more information on our cookie policy.",
+      "fr": "Nous utilisons des cookies pour l'analyse et pour améliorer notre site, et en continuant à utiliser ce site, vous acceptez notre utilisation des cookies. Vous pouvez lire plus d'informations sur notre politique de cookies."
+    },
+    "accept": {"en": "Accept", "fr": "Acceptez"},
+    "policy": {"en": "Read More", "fr": "Plus d'informations"}
+  },
+  "cookie policy": {
+    "page title": {"en": "Cookie Policy", "fr": "Politique de cookie"},
+    "introduction": {
+      "en": "During the use of this website, we may set some cookies that allow us to remember certain information about you in order to improve your experience.  This information is not personally indenfitiable and most web browsers allow some control over how cookies are used.  This may, however, affect the functioning of certain parts of this website.  You can read more about cookies at the website, www.allaboutcookies.org.",
+      "fr": "Au cours de l'utilisation de ce site, nous pouvons établir des cookies qui nous permettent de mémoriser certaines informations vous concernant afin d'améliorer votre expérience. Cette information n'est pas personnellement indéniable et la plupart des navigateurs Web permettent un certain contrôle sur la façon dont les cookies sont utilisés. Cela peut toutefois affecter le fonctionnement de certaines parties de ce site Web. Vous pouvez en savoir plus sur les cookies sur le site www.allaboutcookies.org."
+    },
+    "cookie title": {"en": "Cookies set on our website", "fr": "Cookies sur notre site"},
+    "cookies": {
+      "en": [
+        {"name": "__cfduid", "description": "An ID used by crisp chat in order to keep track of conversations", "duration": "365 days"},
+        {"name": "crisp-client*", "description": "Various cookies used by crisp chat in order for the app to functionVarious cookies used by crisp chat in order for the app to function", "duration": "365 days"},
+        {"name": "__cookie_policy_accept", "description": "A cookie set by this website to to indicate that you clicked accept on our cookie notice.", "duration": "365 days"},
+        {"name": "_ga", "description": "Google Analytics cookie, used to distinguish users. <a href=\"test.com\">Read More</a>", "duration": "365 days"},
+        {"name": "_gid", "description": "Google Analytics cookie, used to distinguish users.", "duration": "365 days"}
+      ],
+      "fr": [
+        {"name": "__cfduid", "description": "An ID used by crisp chat in order to keep track of conversations", "duration": "365 jours"},
+        {"name": "crisp-client*", "description": "Various cookies used by crisp chat in order for the app to function", "duration": "365 jours"},
+        {"name": "__cookie_policy_accept", "description": "A cookie set by this website to to indicate that you clicked accept on our cookie notice.", "duration": "365 jours"},
+        {"name": "_ga", "description": "Google Analytics cookie, used to distinguish users. <a href=\"test.com\">Read More</a>", "duration": "365 jours"},
+        {"name": "_gid", "description": "Google Analytics cookie, used to distinguish users.", "duration": "365 jours"}
+      ]
+    },
+    "storage title": {"en": "Other information stored by our site", "fr": "Autres informations stockées sur notre site"},
+    "storage": {
+      "en": [
+        {"name": "language", "description": "Used to remember your last requested language in future visits.", "duration": "Indefinite"},
+        {"name": "com.auth0.auth.*", "description": "Encrypted variables used by our login provider to keep track of your login.", "duration": "Indefinite"},
+        {"name": "expires_at", "description": "A timestamp indicating when your session will expire.", "duration": "Indefinite"},
+        {"name": "id_token", "description": "This variable contains encrypted information about your user provided to us from your preferred login account. Including: email, name, provider, and other variables you may have approved when you logged in. This token is not decryptable by the web browser.  Unencrypted variables are not stored in storage or cookies, but requested on each visit.  Logging out of the platform removes all user information.", "duration": "Indefinite"},
+        {"name": "picture", "description": "A URL of a picture URL if your login provides one, stored to display a personalized profile in the user menu.", "duration": "Indefinite"}
+      ],
+      "fr": [
+        {"name": "language", "description": "Permet de se souvenir de la dernière langue que vous avez demandée lors de vos prochaines visites.", "duration": "Indefinite"},
+        {"name": "com.auth0.auth.*", "description": "Les variables cryptées utilisées par notre fournisseur de connexion pour garder une trace de votre connexion.", "duration": "Indefinite"},
+        {"name": "expires_at", "description": "Un horodatage indiquant quand votre session expirera.", "duration": "Indefinite"},
+        {"name": "id_token", "description": "Cette variable contient des informations cryptées sur votre utilisateur qui vous sont fournies depuis votre compte de connexion préféré. Y compris: adresse e-mail, nom, fournisseur et autres variables que vous avez peut-être approuvées lorsque vous vous êtes connecté. Ce jeton n'est pas déchiffrable par le navigateur Web. Les variables non cryptées ne sont pas stockées dans le stockage ou les cookies, mais demandées à chaque visite. La déconnexion de la plateforme supprime toutes les informations utilisateur.", "duration": "Indefinite"},
+        {"name": "picture", "description": "Une URL d'une URL d'image si votre identifiant en fournit une, stockée pour afficher un profil personnalisé dans le menu utilisateur.", "duration": "Indefinite"}
+      ]
+    },
+    "privacy": {
+      "en": "This page is provided for convenience purposes only please see our full privacy policy for additional details (Available in English only).",
+      "fr": "Cette page est fournie uniquement à des fins de commodité. Veuillez consulter notre politique de confidentialité complète pour plus de détails (Disponible en Anglais uniquement)."
+    }
+  }
+}

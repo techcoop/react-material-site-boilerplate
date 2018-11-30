@@ -1,0 +1,190 @@
+{
+  "home": {
+    "blurb": {
+      "en": [
+        "This site uses react-material-site by TechCoop.",
+        "It has some very basic features setup to get your started."
+      ],
+      "fr": [
+        "Ce site utilise react-material-site de TechCoop.",
+        "Il dispose de quelques fonctionnalités de base pour vous aider à démarrer."
+      ]
+    },
+    "cra": {
+      "title": {
+        "en": [
+          "Create React App"
+        ],
+        "fr": [
+          "Create React App"
+        ]
+      },
+      "body": {
+        "en": [
+          "React Material Site uses the amazing CRA v2 to avoid cumbersome build configuration.",
+          "",
+          "We also make use of react-app-rewired to add some additional handling and support."
+        ],
+        "fr": [
+          "React Material Site utilise l'incroyable CRA v2 pour éviter une configuration de construction fastidieuse.",
+          "",
+          "Nous utilisons également react-app-rewired pour ajouter du traitement et du support supplémentaires."
+        ]
+      }
+    },
+    "material": {
+      "title": {
+        "en": [
+          "Material Components Web + RMWC"
+        ],
+        "fr": [
+          "Material Components Web + RMWC"
+        ]
+      },
+      "body": {
+        "en": [
+          "We use a material design framework created by google themselves along with a great react wrapper called RMWC by James Friedman.",
+          "",
+          "We have created some higher level components ontop of this to reduce boilerplate code for common uses.  You can still use the base components if you need something special."
+        ],
+        "fr": [
+          "Nous utilisons un cadre de conception matérielle créé par Google lui-même avec un excellent logiciel de réaction appelé RMWC par James Friedman.",
+          "",
+          "Nous avons créé des composants de niveau supérieur afin de réduire le code standard pour les utilisations courantes. Vous pouvez toujours utiliser les composants de base si vous avez besoin de quelque chose de spécial."
+        ]
+      }
+    },
+    "content": {
+      "title": {
+        "en": [
+          "Localization + Content"
+        ],
+        "fr": [
+          "Localisation + Contenu"
+        ]
+      },
+      "body": {
+        "en": [
+          "There is extensible support for multiple languages which attempts to detect the users preferred language.  Adding support for a new language is as easy as adding an entry into the configuration and values into your JSON content.",
+          "",
+          "You can optionally make use of a library we created called JSON-Google-Docs that allows you to convert Google Docs into a JSON file that allows you to embed dynamic content into your build. For simplicity, this feature has been disabled in the boilerplate."
+        ],
+        "fr": [
+          "Il existe un support extensible pour plusieurs langues qui tente de détecter la langue préférée de l'utilisateur. L'ajout de la prise en charge d'une nouvelle langue est aussi simple que l'ajout d'une entrée dans la configuration et de valeurs dans votre contenu JSON.",
+          "",
+          "Vous pouvez éventuellement utiliser une bibliothèque que nous avons créée, appelée JSON-Google-Docs, vous permettant de convertir Google Docs en un fichier JSON vous permettant d'intégrer du contenu dynamique à votre construction. Pour des raisons de simplicité, cette fonction a été désactivée sur le passe-partout."
+        ]
+      }
+    },
+    "router": {
+      "title": {
+        "en": [
+          "Configuration Based Router"
+        ],
+        "fr": [
+          "Routeur basé sur la configuration"
+        ]
+      },
+      "body": {
+        "en": [
+          "We have created a configurable router system build ontop of react-router that allows you to easily setup new routes and menu items in various areas of the application.",
+          "",
+          "Optionally, you can add additional elements to the router manually."
+        ],
+        "fr": [
+          "Nous avons créé un système de routeur configurable construit sur le dessus de react-routeur qui vous permet de configurer facilement de nouvelles routes et de nouveaux éléments de menu dans divers domaines de l’application.",
+          "",
+          "Vous pouvez éventuellement ajouter des éléments supplémentaires au routeur manuellement."
+        ]
+      }
+    },
+    "auth": {
+      "title": {
+        "en": [
+          "SSO Authentication with Auth0"
+        ],
+        "fr": [
+          "Authentification SSO avec Auth0"
+        ]
+      },
+      "body": {
+        "en": [
+          "We have created a redux module that wraps the functionality of a great SSO provider Auth0.",
+          "",
+          "You can setup an SSO integration using your choice of providers in minutes with our configuration options."
+        ],
+        "fr": [
+          "Nous avons créé un module redux qui englobe les fonctionnalités d'un excellent fournisseur d'authentification unique Auth0.",
+          "",
+          "Vous pouvez configurer une intégration SSO à l'aide de votre choix de fournisseurs en quelques minutes grâce à nos options de configuration."
+        ]
+      }
+    },
+    "vendors": {
+      "title": {
+        "en": [
+          "Other Vendors"
+        ],
+        "fr": [
+          "Autres vendeurs"
+        ]
+      },
+      "body": {
+        "en": [
+          "We also have some other vendors that are ready to use by just adding configuration.",
+          "",
+          "Currently, we support Google Analytics, Sentry, and Crisp chat.  We have plans to greatly expand the supported vendors in the future."
+        ],
+        "fr": [
+          "Nous avons également d'autres fournisseurs prêts à être utilisés en ajoutant simplement la configuration.",
+          "",
+          "Nous prenons actuellement en charge les discussions Google Analytics, Sentry et Crisp. Nous prévoyons d'étendre considérablement les fournisseurs pris en charge à l'avenir."
+        ]
+      }
+    }
+  },
+  "example": {
+    "page title": {
+      "en": [
+        "Example Module"
+      ],
+      "fr": [
+        "Exemple de module"
+      ]
+    },
+    "body": {
+      "en": [
+        "This page uses an example module that increments when you push the button."
+      ],
+      "fr": [
+        "Cette page utilise un exemple de module qui s'incrémente lorsque vous appuyez sur le bouton."
+      ]
+    },
+    "button": {
+      "en": [
+        "Increment!"
+      ],
+      "fr": [
+        "Incrément!"
+      ]
+    }
+  },
+  "contact": {
+    "page title": {
+      "en": [
+        "Contact Us"
+      ],
+      "fr": [
+        "Contactez nous"
+      ]
+    },
+    "form": {
+      "en": [
+        "Please drop us a line if you have any questions or would like to schedule a demo."
+      ],
+      "fr": [
+        "Faites-nous savoir si vous avez des questions ou si vous souhaitez planifier une d\u00e9monstration."
+      ]
+    }
+  }
+}
