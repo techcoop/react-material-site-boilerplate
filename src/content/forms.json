@@ -1,0 +1,35 @@
+{
+  "contact": {
+    "action": "https://script.google.com/macros/s/AKfycbxY1n3Q7PrIczzTLfOYUoDtViGk2m9gfcaSHRlQFSxo1pMR34Z8/exec",
+    "type": "object",
+    "success": {
+      "redirect": "/",
+      "global": {
+        "en": "Thank you for contacting us, we will be in touch shortly!",
+        "fr": "Merci de nous contacter, nous vous contacterons bientôt!"
+      }
+    },
+    "error": {
+      "bottom": {
+        "en": "There was an issue submitting your form", 
+        "fr": "Un problème s'est produit lors de la soumission de votre formulaire"
+      }
+    }
+  },
+  "upload": {
+    "action": "%%API_URL%%/data",
+    "type": "form",
+    "success": {
+      "global": {
+        "en": "Your list has been uploaded.",
+        "fr": "Votre liste a été téléchargée."
+      }
+    },
+    "error": {
+      "bottom": {
+        "en": "Unable to upload your list, please try again!", 
+        "fr": "Impossible de télécharger votre liste, veuillez réessayer!"
+      }
+    }
+  }
+}

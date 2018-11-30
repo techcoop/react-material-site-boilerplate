@@ -1,0 +1,47 @@
+[
+  {
+    "authenticated": false,
+    "location": "drawer",
+    "items": [
+      {
+        "view": "Home",
+        "icon": {"icon": "home"},
+        "label": {"en": "Home", "fr": "Accueil", "sp": "Casa"},
+        "route": "/"
+      },
+      {
+        "view": "Example",
+        "icon": {"icon": "create"},
+        "label": {"en": "Example", "fr": "Exemple", "sp": "Ejemplo"},
+        "route": "/example"
+      },
+      {
+        "view": "Contact",
+        "icon": {"icon": "email"},
+        "label": {"en": "Contact", "fr": "Contact", "sp": "Contacto"},
+        "route": "/contact"
+      }
+    ]
+  },
+  {
+    "authenticated": false,
+    "location": "footer-left",
+    "items": [
+      {
+        "view": "Terms",
+        "label": {"en": "Terms of Use", "fr": "Conditions d'utilisation", "sp": "Términos de Uso"},
+        "route": "/terms"
+      },
+      {
+        "view": "Privacy",
+        "label": {"en": "Privacy Policy", "fr": "Politique de confidentialité", "sp": "Política de privacidad"},
+        "route": "/privacy"
+      },
+      {
+        "view": "Cookies",
+        "label": {"en": "Cookie Policy", "fr": "Politique de cookie", "sp": "Política de cookies"},
+        "route": "/cookies"
+      }
+    ]
+  }
+]
