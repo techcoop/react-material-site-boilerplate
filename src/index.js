@@ -38,7 +38,6 @@ if (process.env.AUTH_ENABLED) {
 }
 
 // Build a router switch with routes from json and extras
-//const routerSwitch = getRouterSwitch(route, store, callback, NotFound)
 const routerSwitch = getRouterSwitch(route, store, extras)
 
 // Construct our app
