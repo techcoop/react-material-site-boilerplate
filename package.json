@@ -6,7 +6,7 @@
   "dependencies": {
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-material-site": "^0.2.0"
+    "react-material-site": "^0.4.0"
   },
   "scripts": {
     "start": "react-material-site content --auto && react-material-site prebuild --watch && react-app-rewired start",
