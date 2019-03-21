@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import { routerReducer } from 'react-router-redux'
+import { connectRouter } from 'connected-react-router'
 
 // Get generic modules from react-material-site
 import auth from 'react-material-site/lib/modules/auth'
@@ -12,9 +12,9 @@ import ui from 'react-material-site/lib/modules/ui'
 import example from './modules/example'
 
 // Combine with router reducer
-const reducers = combineReducers({
+const createRootReducer = (history) => combineReducers({
   // Apply generic modules, not all of these are needed
-  router: routerReducer,
+  router: connectRouter(history),
   auth,
   content,
   form,
@@ -25,4 +25,4 @@ const reducers = combineReducers({
   example
 })
 
-export default reducers
+export default createRootReducer

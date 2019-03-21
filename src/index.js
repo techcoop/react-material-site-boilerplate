@@ -1,8 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import thunk from 'redux-thunk'
-import { createStore, applyMiddleware } from 'redux'
-import { routerMiddleware } from 'react-router-redux'
+import { createStore, applyMiddleware, compose } from 'redux'
+import { routerMiddleware } from 'connected-react-router'
 
 import * as serviceWorker from 'react-material-site/lib/utils/serviceWorker'
 import history from 'react-material-site/lib/utils/history'
@@ -15,7 +15,7 @@ import { callback, login, logout, authenticated } from 'react-material-site/lib/
 import { getRouterSwitch, getRouterData } from 'react-material-site/lib/routes'
 
 import content from './content'
-import reducers from './reducers'
+import createRootReducer from './reducers'
 import routes from './content/routes'
 
 import AppContainer from 'react-material-site/lib/views/AppContainer'
@@ -29,7 +29,12 @@ const { route, menu } = getRouterData(routes, views, authenticated)
 const initialState = { content, menu }
 
 // Build store with reducers
-const store = createStore(reducers, initialState, applyMiddleware(thunk, routerMiddleware(history)))
+const store = createStore(
+  createRootReducer(history),
+  initialState,
+  compose(applyMiddleware(thunk, routerMiddleware(history)))
+)
+
 const extras = {NotFound: NotFound}
 if (process.env.AUTH_ENABLED) {
   extras.callback = callback
