@@ -1,12 +1,14 @@
 {
   "name": "react-material-site-boilerplate",
   "version": "0.1.1",
-  "homepage": "https://techcoop.github.io/react-material-site-boilerplate/",
+  "description": "Boilerplate site created with create-react-material-site",
+  "homepage": "/",
   "private": true,
   "dependencies": {
+    "@rmwc/circular-progress": "^5.4.3",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
-    "react-material-site": "^0.4.0"
+    "react-material-site": "^0.7.0"
   },
   "scripts": {
     "start": "react-material-site content --auto && react-material-site prebuild --watch && react-app-rewired start",

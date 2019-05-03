@@ -18,6 +18,7 @@ import content from './content'
 import createRootReducer from './reducers'
 import routes from './content/routes'
 
+import LogoLoader from 'react-material-site/lib/components/LogoLoader'
 import AppContainer from 'react-material-site/lib/views/AppContainer'
 import NotFound from 'react-material-site/lib/views/NotFound'
 import * as views from './views'
@@ -35,9 +36,8 @@ const store = createStore(
   compose(applyMiddleware(thunk, routerMiddleware(history)))
 )
 
-const extras = {NotFound: NotFound}
+const extras = { NotFound: NotFound }
 if (process.env.AUTH_ENABLED) {
-  extras.callback = callback
   extras.login = login
   extras.logout = logout
 }
@@ -45,13 +45,47 @@ if (process.env.AUTH_ENABLED) {
 // Build a router switch with routes from json and extras
 const routerSwitch = getRouterSwitch(route, store, extras)
 
-// Construct our app
-ReactDOM.render(
-  <AppContainer store={store} history={history} routes={routerSwitch} />,
-  document.getElementById('root')
-)
+startApp([], [])
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
-serviceWorker.unregister();
+async function startApp(publicPromises, authPromises) {
+  // If no auth, just render app
+  if (!process.env.AUTH_ENABLED) {
+    renderApp(publicPromises)
+    return
+  }
+
+  if (window.location.pathname === '/callback' && /access_token|id_token|error/.test(window.location.hash)) {
+    await store.dispatch(callback(() => {
+      if (store.getState().auth.isAuthenticated()) {
+        renderApp(authPromises)
+      } else {
+        renderApp(publicPromises)
+      }
+    }))
+
+    return
+  }
+  
+  if (store.getState().auth.isAuthenticated()) {
+    renderApp(authPromises)
+  } else {
+    renderApp(publicPromises)
+  }
+}
+
+async function renderApp(promises) {
+  // Render loader
+  ReactDOM.render(
+    <div style={{width: '100%'}}><LogoLoader /></div>,
+    document.getElementById('root')
+  )
+
+  Promise.all(promises.map((promise) => store.dispatch(promise()))).then(() => {
+    ReactDOM.render(
+      <AppContainer store={store} history={history} routes={routerSwitch} />,
+      document.getElementById('root')
+    )
+
+    serviceWorker.unregister()
+  })
+}
