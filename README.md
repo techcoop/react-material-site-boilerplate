@@ -4,7 +4,7 @@ Basic site example using [react-material-site][react-material-site]
 
 # Requirements
 1) node > 6.0.0
-2) yarn (or npm latest) > 1.0.0
+2) yarn > 1.0.0 or npm > 4.0.0
 
 # Configuration
 ```bash
